@@ -36,8 +36,20 @@ and the install rewuirements
 now first we will create custom logging inside the __init__.py file
 now we will configure the utils common.py file(for frequent function)
 
-6: project workflow
+-------------------------------------------------------------------------
+We create the python code for the NLP Data Abstractor using google collab
+-------------------------------------------------------------------------
+data : https://github.com/AyushKumar177/Data/raw/main/DataAbstractorData.zip
 
+6: project workflow
+    1.update config.yaml file 
+    2.update params.yaml
+    3.update entity in src
+    4.update configuration manager in src config
+    5.update the components
+    6.update pipeline
+    7.update main.py
+    8.update app.py
 
 7: notebook experiment and testing
 
