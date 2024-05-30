@@ -40,6 +40,7 @@ now we will configure the utils common.py file(for frequent function)
 We create the python code for the NLP Data Abstractor using google collab
 -------------------------------------------------------------------------
 data : https://github.com/AyushKumar177/Data/raw/main/DataAbstractorData.zip
+ upload it to research folder
 
 6: project workflow
     1.update config.yaml file 
@@ -52,7 +53,7 @@ data : https://github.com/AyushKumar177/Data/raw/main/DataAbstractorData.zip
     8.update app.py
 
 7: notebook experiment and testing
-
+now we create 01_data_ingestion.ipynb and configure our config.yaml and then update entity for return type
 
 8: component modular code implementation
 
