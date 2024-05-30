@@ -53,10 +53,21 @@ data : https://github.com/AyushKumar177/Data/raw/main/DataAbstractorData.zip
     8.update app.py
 
 7: notebook experiment and testing
-now we create 01_data_ingestion.ipynb and configure our config.yaml and then update entity for return type
+now we create 01_data_ingestion.ipynb and configure our config.yaml and then update entity for return type ,also the params.yaml file after configurationManager is done in 01_data_ingestion.ipynb , we do the components and then pipeline
+Now it created the artifacts folder and its contents
+Now converting it to modular coding
 
 8: component modular code implementation
+    we use 01_data_ingestion.ipynb file for modular codes
+    update __init__.py inside the entity folder
+    update src/config/configuration.py  
+    update src/components/data_ingestion.py
+    update pipeline/stage_01_data_ingestion.py 
 
+but for execution we have to write it in the main.py file
+in main.py file we write the data ingestion stage (so the artifacts folder now would be created  automatically)
+
+since we dont want to upload the artifacts folder we mention it inside .gitignore
 
 9: training pipeline
 
