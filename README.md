@@ -77,6 +77,9 @@ following the previous ways
 
 Now we will do data transformation in 03_data_transformation.ipynb in similar way to previous phases . We will convert the data to features using same functions from the DataAbstractor.ipynb notebook
 
+Now we will configure the stage_04_model_trainer.ipynb in the same way and use the functions from DataAbstractor.ipynb
+Here we will also declare the parameters in the params.yaml to use them in function like training arguments
+
 
 9: training pipeline
 
