@@ -88,6 +88,9 @@ Now we will create the prediction pipeline and user application
 inside pipeline folder we create a prediction.py file and write it
 then we write the app.py,to run it we create host and port
 
+project implementation is done 
+
+now we have to only deploy it
 
 10: final ci/cd deployment on AWS
 
