@@ -80,14 +80,14 @@ Now we will do data transformation in 03_data_transformation.ipynb in similar wa
 Now we will configure the stage_04_model_trainer.ipynb in the same way and use the functions from DataAbstractor.ipynb
 Here we will also declare the parameters in the params.yaml to use them in function like training arguments
 
+Finally the 05_model_evaluation.ipynb and store the scores in same way
 
-9: training pipeline
+Training pipeline is completed
 
+9: prediction pipeline & user app creation
+Now we will create the prediction pipeline by using API 
 
-10: prediction pipeline & user app creation
-
-
-11: final ci/cd deployment on AWS
+10: final ci/cd deployment on AWS
 
 
 -----------------------------------------------
