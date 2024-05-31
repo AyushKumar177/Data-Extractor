@@ -37,9 +37,8 @@ and the install rewuirements
 now first we will create custom logging inside the __init__.py file
 now we will configure the utils common.py file(for frequent function)
 
--------------------------------------------------------------------------
 We create the python code for the NLP Data Abstractor using google collab
--------------------------------------------------------------------------
+
 data : https://github.com/AyushKumar177/Data/raw/main/DataAbstractorData.zip
  upload it to research folder
 
@@ -85,7 +84,10 @@ Finally the 05_model_evaluation.ipynb and store the scores in same way
 Training pipeline is completed
 
 9: prediction pipeline & user app creation
-Now we will create the prediction pipeline by using API 
+Now we will create the prediction pipeline and user application
+inside pipeline folder we create a prediction.py file and write it
+then we write the app.py,to run it we create host and port
+
 
 10: final ci/cd deployment on AWS
 
