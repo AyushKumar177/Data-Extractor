@@ -18,6 +18,7 @@ First we have set up the github repository and then connected it with our local 
 
 We created the template for the project initially
     conda create -n EVM python=3.8 -y
+    source activate base
     activate EVM
 
 3: Project setup 
@@ -69,6 +70,11 @@ in main.py file we write the data ingestion stage (so the artifacts folder now w
 
 since we dont want to upload the artifacts folder we mention it inside .gitignore
 
+now we will create the 02_data_validation.ipynb file and follow the same order : config.yaml-entity-configuration manager-components-pipeline
+after doing this it will create a data_validation folder and give a status.txt file
+Now modular coding following steps in order entity-configuration manager-components-pipeline
+following the previous ways
+ now 
 9: training pipeline
 
 
