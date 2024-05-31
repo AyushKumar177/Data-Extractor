@@ -70,11 +70,14 @@ in main.py file we write the data ingestion stage (so the artifacts folder now w
 
 since we dont want to upload the artifacts folder we mention it inside .gitignore
 
-now we will create the 02_data_validation.ipynb file and follow the same order : config.yaml-entity-configuration manager-components-pipeline
+Now we will create the 02_data_validation.ipynb file and follow the same order : config.yaml-entity-configuration manager-components-pipeline
 after doing this it will create a data_validation folder and give a status.txt file
 Now modular coding following steps in order entity-configuration manager-components-pipeline
 following the previous ways
- now 
+
+Now we will do data transformation in 03_data_transformation.ipynb in similar way to previous phases . We will convert the data to features using same functions from the DataAbstractor.ipynb notebook
+
+
 9: training pipeline
 
 
