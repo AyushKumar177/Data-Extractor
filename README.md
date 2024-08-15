@@ -1,99 +1,99 @@
-# Data-Extractor
-0: Introduction
+# Data-Abstractor
 
-This is our end to end project where we will create a data abstractor tool .
-This tool will take an elaborated text and summarize it to give us the short information or abstract
-the important information to give us the summary as the output.
-It is a very useful tool as it helps to reduce our time in going through the whole data and gives us the summary in the least time.
+## Introduction
 
+The Data-Abstractor is an end-to-end tool designed to summarize extensive texts by extracting key information, providing a concise summary. This tool helps save time by offering quick overviews of lengthy documents, making it a valuable asset for efficient data processing.
 
-1: Github Repository Setting
+## Table of Contents
 
-First we have set up the github repository and then connected it with our local machine to work on it
+1. [GitHub Repository Setup](#github-repository-setup)
+2. [Project Template Creation](#project-template-creation)
+3. [Project Setup](#project-setup)
+4. [Requirement Installation](#requirement-installation)
+5. [Logging, Utils, and Exception Module](#logging-utils-and-exception-module)
+6. [Project Workflow](#project-workflow)
+7. [Notebook Experiment and Testing](#notebook-experiment-and-testing)
+8. [Component Modular Code Implementation](#component-modular-code-implementation)
+9. [Prediction Pipeline & User App Creation](#prediction-pipeline--user-app-creation)
+10. [Final CI/CD Deployment on AWS](#final-cicd-deployment-on-aws)
+
+## GitHub Repository Setup
+
+1. Set up the GitHub repository.
+2. Connect it with your local machine.
+3. Use the following Git commands to manage your repository:
+    ```bash
     git add .
     git commit -m "done"
     git push origin main
+    ```
 
-2: Project template creation
+## Project Template Creation
 
-We created the template for the project initially
-    conda create -n EVM python=3.8 -y
+1. Create a virtual environment using Conda:
+    ```bash
+    conda create -n EVM 
     source activate base
     activate EVM
+    ```
 
-3: Project setup 
+## Project Setup
 
-We create a virtual environment first
+1. Create and activate a virtual environment.
 
-4: requirement installation
+## Requirement Installation
 
-We use hugging face
-Now we will go to setup.py and write it
-and the install rewuirements
+1. Utilize Hugging Face libraries.
+2. Write the setup in `setup.py`.
+3. Install the required packages:
+    ```bash
     pip install -r requirements.txt
+    ```
 
-5: logging ,utils and exception module
+## Logging, Utils, and Exception Module
 
-now first we will create custom logging inside the __init__.py file
-now we will configure the utils common.py file(for frequent function)
+1. Create custom logging in `__init__.py`.
+2. Configure utility functions in `common.py` for frequent use.
+3. Develop the NLP Data Abstractor using Google Colab.
+4. Upload the data from [this link](https://github.com/AyushKumar177/Data/raw/main/DataAbstractorData.zip) to the `research` folder.
 
-We create the python code for the NLP Data Abstractor using google collab
+## Project Workflow
 
-data : https://github.com/AyushKumar177/Data/raw/main/DataAbstractorData.zip
- upload it to research folder
+1. Update `config.yaml`.
+2. Update `params.yaml`.
+3. Update entities in the `src` folder.
+4. Update the configuration manager in `src/config`.
+5. Update components.
+6. Update the pipeline.
+7. Update `main.py`.
+8. Update `app.py`.
 
-6: project workflow
-    1.update config.yaml file 
-    2.update params.yaml
-    3.update entity in src
-    4.update configuration manager in src config
-    5.update the components
-    6.update pipeline
-    7.update main.py
-    8.update app.py
+## Notebook Experiment and Testing
 
-7: notebook experiment and testing
-now we create 01_data_ingestion.ipynb and configure our config.yaml and then update entity for return type ,also the params.yaml file after configurationManager is done in 01_data_ingestion.ipynb , we do the components and then pipeline
-Now it created the artifacts folder and its contents
-Now converting it to modular coding
+1. Create `01_data_ingestion.ipynb`.
+2. Configure `config.yaml` and `params.yaml`.
+3. Update the entity for return types.
+4. Update components and pipeline.
+5. Create the `artifacts` folder and its contents.
+6. Convert to modular coding.
 
-8: component modular code implementation
-    we use 01_data_ingestion.ipynb file for modular codes
-    update __init__.py inside the entity folder
-    update src/config/configuration.py  
-    update src/components/data_ingestion.py
-    update pipeline/stage_01_data_ingestion.py 
+## Component Modular Code Implementation
 
-but for execution we have to write it in the main.py file
-in main.py file we write the data ingestion stage (so the artifacts folder now would be created  automatically)
+1. Implement modular code using `01_data_ingestion.ipynb`.
+2. Update `__init__.py` inside the `entity` folder.
+3. Update `src/config/configuration.py`.
+4. Update `src/components/data_ingestion.py`.
+5. Update `pipeline/stage_01_data_ingestion.py`.
+6. Write data ingestion stage code in `main.py`.
+7. Exclude the `artifacts` folder from Git by adding it to `.gitignore`.
 
-since we dont want to upload the artifacts folder we mention it inside .gitignore
+## Prediction Pipeline & User App Creation
 
-Now we will create the 02_data_validation.ipynb file and follow the same order : config.yaml-entity-configuration manager-components-pipeline
-after doing this it will create a data_validation folder and give a status.txt file
-Now modular coding following steps in order entity-configuration manager-components-pipeline
-following the previous ways
+1. Create the prediction pipeline in `pipeline/prediction.py`.
+2. Develop the user application in `app.py`.
+3. Set up hosting and port configurations.
 
-Now we will do data transformation in 03_data_transformation.ipynb in similar way to previous phases . We will convert the data to features using same functions from the DataAbstractor.ipynb notebook
+## Final CI/CD Deployment on AWS
 
-Now we will configure the stage_04_model_trainer.ipynb in the same way and use the functions from DataAbstractor.ipynb
-Here we will also declare the parameters in the params.yaml to use them in function like training arguments
+1. Deploy the project using CI/CD pipelines on AWS.
 
-Finally the 05_model_evaluation.ipynb and store the scores in same way
-
-Training pipeline is completed
-
-9: prediction pipeline & user app creation
-Now we will create the prediction pipeline and user application
-inside pipeline folder we create a prediction.py file and write it
-then we write the app.py,to run it we create host and port
-
-project implementation is done 
-
-now we have to only deploy it
-
-10: final ci/cd deployment on AWS
-
-
------------------------------------------------
- 
